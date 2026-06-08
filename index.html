@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+
+    <!-- Importación de la tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Unkempt:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Enlace al archivo de estilos externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado principal con logo y navegación -->
+    <header>
+        <div class="container header-content">
+
+            <!-- Elemento visual que representa el logo -->
+            <div class="logo"></div>
+
+            <!-- Navegación principal del sitio -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Sección principal de presentación -->
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+
+                <!-- Columna destinada a la información principal -->
+                <div class="hero-text">
+                    <h1>Hola, me llamo Ariel</h1>
+                    <p>Multimedia y Producción Audiovisual</p>
+                    <a href="#proyectos" class="btn">
+                        Ver proyectos
+                    </a>
+                </div>
+
+                <!-- Columna destinada a la fotografía de perfil -->
+                <div class="hero-image">
+                    <img src="https://picsum.photos/400/400" alt="Foto de perfil">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección para mostrar proyectos destacados -->
+        <section id="proyectos" class="projects">
+            <div class="container">
+
+                <h2>Mis Proyectos</h2>
+
+                <div class="projects-grid">
+
+                    <!-- Tarjeta individual de proyecto -->
+                    <article class="project-card">
+                        <img src="https://picsum.photos/350/250?random=1" alt="Proyecto 1">
+                        <h3>Lorem Ipsum</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="https://picsum.photos/350/250?random=2" alt="Proyecto 2">
+                        <h3>Lorem Ipsum</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </article>
+
+                    <article class="project-card">
+                        <img src="https://picsum.photos/350/250?random=3" alt="Proyecto 3">
+                        <h3>Lorem Ipsum</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección destinada a mostrar habilidades -->
+        <section class="skills">
+            <div class="container">
+
+                <h2>Habilidades</h2>
+
+                <div class="skills-grid">
+                    <div class="skill-card">Lorem Ipsum</div>
+                    <div class="skill-card">Lorem Ipsum</div>
+                    <div class="skill-card">Lorem Ipsum</div>
+                    <div class="skill-card">Lorem Ipsum</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección de contacto con información y formulario -->
+        <section id="contacto" class="contact">
+            <div class="container contact-content">
+
+                <!-- Columna con mensaje de llamada a la acción -->
+                <div class="contact-text">
+                    <h2>¿Tienes un proyecto en mente?</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Vestibulum euismod, nisi vel consectetur interdum,
+                        nunc nunc facilisis erat, vitae suscipit tortor mauris non nibh.
+                    </p>
+                </div>
+
+                <!-- Formulario para recopilar información del visitante -->
+                <div class="contact-form">
+                    <form>
+
+                        <input
+                            type="text"
+                            placeholder="Nombre"
+                            required
+                        >
+
+                        <input
+                            type="email"
+                            placeholder="Correo"
+                            required
+                        >
+
+                        <textarea
+                            placeholder="Mensaje"
+                            rows="6"
+                            required
+                        ></textarea>
+
+                        <button type="submit" class="btn">
+                            Enviar mensaje
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página con información legal y redes -->
+    <footer>
+
+        <p>
+            © 2026 Lorem Ipsum. Todos los derechos reservados.
+        </p>
+
+        <div class="social-links">
+            <a href="#">GitHub</a>
+            <a href="#">Behance</a>
+        </div>
+
+    </footer>
+
+</body>
+</html>

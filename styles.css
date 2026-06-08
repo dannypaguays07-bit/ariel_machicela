@@ -1,0 +1,317 @@
+/* Reinicio básico para mantener consistencia entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configuración global de tipografía y colores generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #0B0F14;
+}
+
+/* La tipografía destacada se aplica a los encabezados */
+h1,
+h2,
+h3 {
+    font-family: 'Unkempt', cursive;
+}
+
+/* Contenedor reutilizable para limitar el ancho del contenido */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Espaciado vertical amplio para mejorar la legibilidad */
+section {
+    padding: 100px 0;
+}
+
+/* Estilos compartidos para los botones interactivos */
+.btn {
+    display: inline-block;
+    background-color: #1C73C2;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+/* Animación suave al interactuar con botones */
+.btn:hover {
+    background-color: #155A96;
+    transform: translateY(-2px);
+}
+
+/* Encabezado fijo con navegación principal */
+header {
+    background-color: #FAFFFD;
+    padding: 20px 0;
+    border-bottom: 1px solid #DDE5E8;
+}
+
+/* Distribuye logo y navegación en extremos opuestos */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Representación visual simple del logo */
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #1C73C2;
+    border-radius: 8px;
+}
+
+/* Organización horizontal de los enlaces de navegación */
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+/* Estilo visual de los enlaces del menú */
+.nav-menu a {
+    text-decoration: none;
+    color: #0B0F14;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* Retroalimentación visual al pasar el cursor */
+.nav-menu a:hover {
+    color: #1C73C2;
+}
+
+/* Sección principal de bienvenida */
+.hero {
+    background-color: #FFFFFF;
+}
+
+/* Distribución en dos columnas para texto e imagen */
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Controla el espacio ocupado por la columna de texto */
+.hero-text {
+    flex: 1;
+}
+
+/* Tamaño destacado para el mensaje principal */
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+/* Subtítulo descriptivo de la profesión */
+.hero-text p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de la imagen de perfil */
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+/* Imagen circular para una apariencia profesional */
+.hero-image img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Fondo alternado para diferenciar visualmente la sección */
+.projects {
+    background-color: #EAF3F9;
+}
+
+/* Título centrado de la sección */
+.projects h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+/* Distribución horizontal de las tarjetas */
+.projects-grid {
+    display: flex;
+    gap: 30px;
+}
+
+/* Tarjetas con sombra para crear profundidad visual */
+.project-card {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+/* Efecto visual al pasar el cursor */
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+/* Imagen destacada dentro de cada proyecto */
+.project-card img {
+    width: 100%;
+    display: block;
+}
+
+/* Espaciado interno del contenido */
+.project-card h3,
+.project-card p {
+    padding: 15px 20px;
+}
+
+/* Fondo alternado para mantener contraste */
+.skills {
+    background-color: #FFFFFF;
+}
+
+/* Encabezado de sección */
+.skills h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+/* Distribución de habilidades en cuatro columnas */
+.skills-grid {
+    display: flex;
+    gap: 20px;
+}
+
+/* Tarjetas simples para destacar capacidades */
+.skill-card {
+    flex: 1;
+    background-color: #3C91E6;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 35px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* Efecto interactivo para las habilidades */
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Sección de contacto con fondo alternado */
+.contact {
+    background-color: #EAF3F9;
+}
+
+/* Diseño de dos columnas para información y formulario */
+.contact-content {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/* Columnas con igual proporción */
+.contact-text,
+.contact-form {
+    flex: 1;
+}
+
+/* Título principal de contacto */
+.contact-text h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Formulario organizado verticalmente */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Apariencia uniforme para los campos */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #C7D6E2;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Área inferior con información complementaria */
+footer {
+    background-color: #FAFFFD;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Espacio entre copyright y enlaces */
+footer p {
+    margin-bottom: 20px;
+}
+
+/* Organización horizontal de redes sociales */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Estilo visual de enlaces sociales */
+.social-links a {
+    text-decoration: none;
+    color: #1C73C2;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+/* Respuesta visual al interactuar con enlaces */
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    .hero-content,
+    .contact-content,
+    .projects-grid,
+    .skills-grid {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-image img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .nav-menu {
+        gap: 15px;
+    }
+
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+}
